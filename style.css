@@ -1,0 +1,76 @@
+:root {
+    --color-primary:    #C8860A;   /* golden temple gold */
+    --color-secondary:  #7B3F00;   /* deep brown (like Angkor stone) */
+    --color-accent:     #2E7D32;   /* jungle green */
+    --color-bg:         #FDF6EC;   /* warm cream background */
+    --color-nav-bg:     #1A1A1A;   /* dark navbar */
+    --color-text:       #2C2C2C;   /* dark gray text */
+    --color-white:      #FFFFFF;
+    --color-footer-bg:  #111111;   /* near black footer */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+.collective-head {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    color: var(--color-secondary);
+    font-weight: bold;
+    width: 100%;
+}
+
+/* ✅ Only the MAIN nav gets flex row styling */
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+    background-color: var(--color-nav-bg);
+    padding: 0;
+}
+
+.nav-list li {
+    flex: 0;                        /* don't stretch */
+    background-color: var(--color-nav-bg);
+    padding: 0;
+    border-radius: 0;
+}
+
+.nav-list li a {
+    color: var(--color-white);
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: block;
+    transition: background-color 0.2s;
+}
+
+.nav-list li a:hover {
+    background-color: var(--color-primary);
+}
+
+/* ✅ Province links — plain vertical list, no brown boxes */
+.province-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+}
+
+.province-list li a {
+    color: var(--color-whute);
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
