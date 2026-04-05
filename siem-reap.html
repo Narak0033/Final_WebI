@@ -8,26 +8,515 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="collective-head">
+    <header>
+          <!-- Nav -->
         <nav>
-            <ul class="nav-list">
-                <li>Visiting Site</li>
-                <li>Cultural Heritage</li>
-                <li>Traditional Food</li>
-                <li>Accomodation</li>
-                <li>Mapping</li>
-            </ul>
+            <div class="nav-inner">
+                <a class="nav-brand" href="#">✦ Siem Reap</a>
+
+                <!-- mobile only For menu -->
+                <button class="nav-toggle" onclick="toggleNav()" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-list" id="navList">
+                    <li><a href="#visiting">Visiting Sites</a></li>
+                    <li><a href="#food">Traditional Food</a></li>
+                    <li><a href="#accommodation">Accommodation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-        <h1 class="collective-head">Siem Reap Province</h1>
+
+        <!-- Hero meaning content display oy ke see jit nav -->
+        <div class="hero">
+            <div class="hero-content">
+                <p class="hero-eyebrow">Kingdom of Cambodia</p>
+                <h1 class="hero-title">Discover <em>Siem Reap</em><br>Province</h1>
+                <div class="divider"></div>
+                <p class="hero-sub">Home to the world's largest religious monument, ancient jungle temples, floating villages, and a vibrant cultural scene waiting to be explored.</p>
+            </div>
+        </div>
     </header>
 
     <main>
 
+        <!-- Section 1: Visiting sites-->
+        <div class="section-wrap" id="visiting">
+        <section>
+            <div class="section-header reveal">
+                <p class="section-tag">Explore</p>
+                <h2 class="section-title">Cultural Heritage</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="cards-grid"> 
+                <!-- Angkor -->
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images/sr/Visiting-site/Angkor.jpg" alt="Angkor Wat" loading="lazy">
+                        <span class="card-badge">12th Century</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Angkor Wat</h3>
+                        <p class="card-desc">Angkor Wat is one of the most famous tourist attractions in Siem Reap, Cambodia. Built in the 12th century, it is known as the largest religious monument in the world. With its stunning Khmer architecture, beautiful carvings, and rich history, Angkor Wat is a must-visit destination for both local and international travelers.</p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/xjyxUYuF2jAe7cZ66" target="_blank">Angkor Wat</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bayon -->
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images/sr/Visiting-site/bayon.jpg" alt="Bayon Temple" loading="lazy">
+                        <span class="card-badge">Late 12th C</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Bayon Temple</h3>
+                        <p class="card-desc">Bayon Temple is one of the most remarkable temples in Angkor Thom, Siem Reap. It is famous for its many giant stone faces carved on the towers, creating a unique and unforgettable view. Built in the late 12th century, Bayon reflects the beauty of Khmer architecture and the rich history of the Angkor period. It is a must-visit destination for travelers who want to explore Cambodia’s cultural heritage.</p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/LTXUB1dV3LzejhYT9" target="_blank">Bayon Temple</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ta Prohm -->
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images/sr/Visiting-site/taprohm.jpg" alt="Ta Prohm" loading="lazy">
+                        <span class="card-badge">Nature & History</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Ta Prohm</h3>
+                        <p class="card-desc">Ta Prohm is one of the most popular temples in Siem Reap, well known for the giant tree roots growing over its ancient stone walls. Built in the 12th century, the temple offers a mysterious and unforgettable atmosphere that attracts visitors from around the world. Its unique combination of nature and history makes Ta Prohm a must-visit destination in the Angkor area.</p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/CNsG7U95dEebJWUA8" target="_blank">Ta Prohm</a>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images/sr/Visiting-site/bakeng.jpg" alt="Phnom Bakheng" loading="lazy">
+                        <span class="card-badge">Sunset Views</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Phnom Bakheng</h3>
+                        <p class="card-desc">Phnom Bakheng is a famous hilltop temple in Siem Reap, known for its beautiful Khmer architecture and stunning sunset views. It is one of the best places for visitors to enjoy the sunset while exploring the rich history of the Angkor area. Its peaceful atmosphere and scenic landscape make it a popular destination for tourists.</p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/zzL22bF5VED9LaCM9" target="_blank">Phnom Bakheng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nature -->
+            <div class="section-header reveal" style="margin-top:56px;">
+                <p class="section-tag">Nature</p>
+                <h2 class="section-title">Natural Attractions</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="cards-grid">
+        
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images/sr/Visiting-site/kompong-phluk.jpg" alt="Kampong Phluk" loading="lazy">
+                        <span class="card-badge">Floating Village</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Tonle Sap / Kampong Phluk</h3>
+                        <p class="card-desc">Tonle Sap / Kampong Phluk is a popular attraction near Siem Reap, offering visitors a chance to explore local life on and around Cambodia’s famous lake. Kampong Phluk is known for its tall stilt houses, boat trips, and beautiful flooded forest, creating a unique and peaceful experience for travelers. It is a great place to enjoy nature, see traditional village life, and discover a different side of Cambodia beyond the temples. </p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/sXLFqQkYrTb7pypeA" target="_blank">Kampong Phluk</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images/sr/Visiting-site/phnom-kulen-waterfall.jpg" alt="Phnom Kulen" loading="lazy">
+                        <span class="card-badge">Sacred Mountain</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Phnom Kulen</h3>
+                        <p class="card-desc">Phnom Kulen is a famous natural and cultural destination in Siem Reap, known for its beautiful waterfalls, mountain scenery, and sacred historical sites. It is a perfect place for visitors who want to relax in nature while also exploring Cambodia’s rich heritage. With its fresh atmosphere and peaceful surroundings, Phnom Kulen is a great destination for adventure, sightseeing, and enjoying a refreshing escape from the city.</p>
+                        <div class="card-location">
+                             <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/BSCwpniSD5pEptUV7" target="_blank">Phnom Kulen</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Museums-->
+             <div class="section-header reveal" style="margin-top:56px;">
+                <p class="section-tag">Museums & Nightlife</p>
+                <h2 class="section-title">Museums & Entertainment</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="cards-grid">
+        
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images/sr/Visiting-site/War-mus.webp" alt="War Museum" loading="lazy">
+                        <span class="card-badge">Museum</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">War Museum Cambodia</h3>
+                        <p class="card-desc">War Museum Cambodia is a unique museum in Siem Reap that gives visitors insight into Cambodia’s recent history and past conflicts. The museum displays military vehicles, weapons, and war-related artifacts, helping tourists learn more about the country’s struggle and resilience. It is a meaningful place for visitors who want to understand an important part of Cambodia’s history beyond its ancient temples.</p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/v7qUdsR4kks96bnU6" target="_blank">War Museum Cambodia</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images/sr/Visiting-site/angkor-mus.jpg" alt="Angkor National Museum" loading="lazy">
+                        <span class="card-badge">Museum</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Angkor National Museum</h3>
+                        <p class="card-desc">Angkor National Museum is a must-visit destination in Siem Reap for travelers who want to learn more about Cambodia’s rich history and culture. The museum showcases a wide collection of Khmer artifacts, ancient sculptures, and exhibits related to the Angkor period. It offers visitors an informative and engaging experience that helps them better understand the heritage and beauty of the Khmer Empire.</p>
+                        <div class="card-location">
+                             <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/4W6P1FwoiB2YCB6Y6" target="_blank">Angkor National Museum</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images/sr/Visiting-site/pubstreet.jpg" alt="Pub Street" loading="lazy">
+                        <span class="card-badge">Night Life</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Pub Street</h3>
+                        <p class="card-desc">Pub Street is one of the most lively and popular places in Siem Reap, especially known for its vibrant nightlife, restaurants, cafes, and local shops. It is a great place for visitors to enjoy delicious food, shopping, entertainment, and the exciting atmosphere of the city. Both local and international tourists often visit Pub Street to relax and experience the modern side of Siem Reap.</p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/xMGrH8myTumo5dGH9" target="_blank">Angkor National Museum</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images/sr/Visiting-site/Apsara-Theatre.jpg" alt="Apsara Theatre" loading="lazy">
+                        <span class="card-badge">Performance & Restaurant</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Apsara Theatre</h3>
+                        <p class="card-desc">Apsara Theatre is a cultural attraction in Siem Reap where visitors can enjoy traditional Khmer dance performances in a beautiful historic setting. Established in 1997, it is known as one of the oldest theatres in the city and plays an important role in preserving Cambodia’s rich performing arts. Guests can experience classical dances, folk dances, and performances from the Reamker, along with an authentic Khmer dinner, making it a memorable cultural experience for tourists. </p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/KYmZMDrCmzZknH2j6" target="_blank">Apsara Theatre</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images/sr/Visiting-site/mealea-watbo.jpg" alt="Mealea Watbo" loading="lazy">
+                        <span class="card-badge">Restaurant</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Mealea Watbo</h3>
+                        <p class="card-desc">Mealea Watbo is a popular restaurant in Siem Reap that offers a mix of traditional Khmer dishes and Western cuisine. Located in the heart of the city, it provides a cozy and welcoming atmosphere for visitors to enjoy local flavors made with fresh ingredients. It is a great place for tourists who want to experience Cambodian food in a comfortable dining setting.</p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/8CfH5TKBJWfS5S5EA" target="_blank">Mealea Watbo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Section 2: TRADITIONAL FOOD-->
+        <div class="section-wrap dark-bg" id="food">
+            <section>
+                <div class="section-header reveal">
+                    <p class="section-tag"> Cambodian Taste</p>
+                    <h2 class="section-title">Traditional Food</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="food-grid">
+            
+                    <div class="food-card reveal">
+                        <div class="card-img-wrap">
+                            <img src="images/sr/food/ahmok.webp" alt="Fish Amok" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Fish Amok</h3>
+                            <p class="card-desc">Fish Amok is one of Cambodia’s most famous traditional dishes and a must-try food for visitors in Siem Reap. It is made with fish cooked in a rich and creamy curry sauce, mixed with coconut milk, kroeung spices, and herbs, then often steamed in banana leaves. With its smooth texture and unique Khmer flavor, Fish Amok offers tourists a delicious taste of Cambodia’s culinary heritage.</p>
+                        </div>
+                    </div>
+            
+                    <div class="food-card reveal">
+                        <div class="card-img-wrap">
+                            <img src="images/sr/food/BeefLokLak.jpg" alt="Beef Lok Lak" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Beef Lok Lak</h3>
+                            <p class="card-desc">Beef Lok Lak is one of Cambodia’s most famous traditional dishes. It is made with stir-fried marinated beef, usually served with rice, fresh lettuce, tomatoes, cucumbers, and onions, and often topped with a fried egg. What makes it special is the lime and black pepper dipping sauce, which gives it a rich, savory, slightly tangy flavor.</p>
+                        </div>
+                    </div>
+            
+                    <div class="food-card reveal">
+                        <div class="card-img-wrap">
+                            <img src="images/sr/food/nombanhchok.webp" alt="Nom Banh Chok" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Nom Banh Chok</h3>
+                            <p class="card-desc">Nom Banh Chok is a beloved traditional Cambodian noodle dish, often eaten for breakfast. It consists of fresh rice noodles topped with a light green fish-based curry gravy and served with fresh vegetables such as banana blossom, cucumber, bean sprouts, and herbs. It is known for its fresh, light, and fragrant taste.</p>
+                        </div>
+                    </div>
+            
+                    <div class="food-card reveal">
+                        <div class="card-img-wrap">
+                            <img src="images/sr/food/Bai-Sach-Chrouk.jpg" alt="Bai Sach Chrouk" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Bai Sach Chrouk</h3>
+                            <p class="card-desc">Bai Sach Chrouk is a classic Cambodian breakfast dish made with grilled pork served over rice. The pork is usually marinated to give it a slightly sweet and savory flavor, and it is often served with pickled vegetables, fresh cucumber, and a bowl of light soup. Simple but delicious, it is one of the most common morning meals in Cambodia.</p>
+                        </div>
+                    </div>
+            
+                    <div class="food-card reveal">
+                        <div class="card-img-wrap">
+                            <img src="images/sr/food/Prahok-Ktiss.jpeg" alt="Prahok Ktiss" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Prahok Ktiss</h3>
+                            <p class="card-desc">Prahok Ktiss is a rich and traditional Cambodian dish made from prahok (fermented fish paste) cooked with minced pork, coconut milk, and spices. It is usually served as a dip with fresh vegetables such as cucumber, eggplant, long beans, and cabbage. The flavor is savory, creamy, and strongly Cambodian, making it a unique dish for visitors to try.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Section 3: ACCOMMODATION-->
+
+        <div class="section-wrap alt-bg" id="accommodation">
+            <section>
+                <div class="section-header reveal">
+                    <p class="section-tag">Stay</p>
+                    <h2 class="section-title">Accommodation</h2>
+                    <div class="section-divider"></div>
+                </div>
+            
+                <div class="tabs reveal">
+                    <button class="tab-btn active" onclick="showTab('hotels')">Hotels</button>
+                    <button class="tab-btn" onclick="showTab('guesthouses')">Guest Houses</button>
+                    <button class="tab-btn" onclick="showTab('homestays')">Home stays</button>
+                </div>
+            
+                <!-- Hotels -->
+                <div class="tab-panel cards-grid active" id="tab-hotels">
+            
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="images/sr/Accommodation/Sokha-Angkor-Resort.jpg" alt="Sokha Angkor Resort" loading="lazy">
+                            <span class="card-badge">5 Star</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Sokha Angkor Resort</h3>
+                            <p class="card-desc">Sokha Angkor Resort is a five-star luxury hotel in the heart of Siem Reap, offering elegant Khmer-inspired design, spacious rooms and suites, dining outlets, a spa, and a saltwater swimming pool. Its central location places it within walking distance of Pub Street, the Old Market, and the Night Market, while Angkor Wat is about an 18-minute drive away, making it a convenient choice for both city exploration and temple visits.</p>
+                            <div class="card-location">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                                </svg>
+                            <a href="https://maps.app.goo.gl/2SKEDsDgyT7LmH7b7" target="_blank">Sokha Angkor Resort</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="images/sr/Accommodation/Jungle.jpg" alt="The Jungle" loading="lazy">
+                            <span class="card-badge">Family Friendly</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">The Jungle</h3>
+                            <p class="card-desc">The Jungle offers comfortable family-friendly accommodation in Siem Reap, with private bathrooms, air-conditioning, and modern amenities. Guests can enjoy garden or pool views from their balconies or terraces, while relaxing with wellness facilities such as a spa, outdoor swimming pool, fitness area, sauna, kids’ pool, and yoga classes. The on-site restaurant serves local, Asian, and international cuisine in a welcoming atmosphere. Conveniently located near Angkor National Museum and only about 7 km from Angkor Wat, the hotel is a great choice for travelers who want both relaxation and easy access to Siem Reap’s top attractions.</p>
+                            <div class="card-location">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                                </svg>
+                                <a href="https://maps.app.goo.gl/QToshYhoj9UJ9on39" target="_blank">The Jungle</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="images/sr/Accommodation/Twizt.jpg" alt="The Twizt" loading="lazy">
+                            <span class="card-badge">3 Star</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">The Twizt</h3>
+                            <p class="card-desc">The Twizt - Lifestyle Hostel & Hotel is a stylish 3-star stay in the heart of Siem Reap, offering comfortable accommodation with rooftop swimming pools, sun terraces, lush gardens, and free WiFi in public areas. Guests can enjoy a modern dining experience with American and Asian cuisine, along with leisure spaces such as a games room, outdoor fireplace, and live music. Its city-centre location makes it especially convenient, just an 8-minute walk from King’s Road Angkor, around 6 km from Angkor Wat, and close to attractions like Angkor National Museum and Wat Thmei, making it a great base for exploring Siem Reap.</p>
+                            <div class="card-location">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                                </svg>
+                                <a href="https://maps.app.goo.gl/zNC3tyHz7TwvvvJ5A" target="_blank">The Twizt - Lifestyle Hostel & Hotel</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            
+                <!-- Guest Houses -->
+                <div class="tab-panel cards-grid" id="tab-guesthouses">
+            
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="images/sr/Accommodation/Onederz.jpg" alt="Onederz Hostel" loading="lazy">
+                            <span class="card-badge">Budget</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Onederz Hostel</h3>
+                            <p class="card-desc">Onederz Hostel Siem Reap is a modern and budget-friendly hostel located just 300 metres from Pub Street in the heart of Siem Reap. Offering both private rooms and dormitories with air conditioning, it is a great choice for travelers seeking comfort and convenience. Guests can enjoy free WiFi, on-site dining, and two swimming pools, including a rooftop pool with beautiful sunset views. Its location is especially convenient, with King’s Road Angkor nearby and Angkor Wat only 6 km away, making it an ideal base for exploring both the city center and famous temples.</p>
+                            <div class="card-location">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                                </svg>
+                                <a href="https://maps.app.goo.gl/o6gmDus6ibEz49D68" target="_blank">Onederz Siem Reap</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="images/sr/Accommodation/Bou-Savy-Guest-House.jpg" alt="Bou Savy Guest House" loading="lazy">
+                            <span class="card-badge">Khmer Style</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Bou Savy Guest House</h3>
+                            <p class="card-desc">Bou Savy Guest House is a comfortable and budget-friendly stay in Siem Reap, offering a peaceful Khmer-style atmosphere with convenient access to the city’s main attractions. Located near Royal Residence and Angkor National Museum, it is also within easy reach of Pub Street and around 8 km from Angkor Wat, making it a practical choice for travelers who want both comfort and a good location.</p>
+                            <div class="card-location">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                                </svg>
+                                <a href="https://maps.app.goo.gl/2uG4J1qGdkUDUyrUA" target="_blank">Bou Savy Guest House</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            
+                <!-- Homestays -->
+                <div class="tab-panel cards-grid" id="tab-homestays">
+            
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="images/sr/Accommodation/Kampong-Phluk-Homestays.jpg" alt="Kampong Phluk Homestay" loading="lazy">
+                            <span class="card-badge">Ecotourism</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Kampong Phluk Homestays</h3>
+                            <p class="card-desc">Kampong Phluk Homestays offer a community-based stay in the floating and flooded village area southeast of Siem Reap, giving visitors a chance to experience local family life, traditional meals, and the natural beauty of the flooded forest. The homestay experience is designed around village life and ecotourism, with activities such as paddling through the village, visiting stilt houses, hiking or boating in the flooded forest, and enjoying the peaceful countryside atmosphere. It is located about 19 km southeast of Siem Reap, making it a great option for travelers who want a more local and nature-focused experience beyond the city.</p>
+                            <div class="card-location">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                                </svg>
+                                <a href="https://maps.app.goo.gl/sXLFqQkYrTb7pypeA" target="_blank">Kampong Phluk</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="images/sr/Accommodation/Lom-Lam-Eco-Village-Homestay.jpg" alt="Lom Lam Eco Village" loading="lazy">
+                            <span class="card-badge">Countryside</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Lom Lam Eco Village Homestay</h3>
+                            <p class="card-desc">Lom Lam Eco Village Homestay offers an authentic countryside stay outside central Siem Reap, giving visitors a chance to experience local village life in a peaceful and non-touristy setting. Located in the Roluos / Prasat Bakong area, about 17 km from Siem Reap town, it is a great choice for travelers looking for a more traditional Cambodian homestay experience. Its location is convenient for visiting the Roluos temples and for routes toward the Tonlé Sap floating village area, while still being reachable from the city.</p>
+                            <div class="card-location">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                                </svg>
+                                <a href="https://maps.app.goo.gl/mRMsnGrruxGFj7sU7" target="_blank">Lom Lam Eco Village Homestay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </section>
+            </div>
     </main>
 
+    <!-- FOOTER -->
     <footer id="contact">
-        <h2 class="collective-head">Contact</h2>
-    </footer>
+        <h2>Contact Us</h2>
+        <div class="footer-divider"></div>
+            <div class="footer-grid">
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#visiting">Visiting Sites</a></li>
+                        <li><a href="#food">Traditional Food</a></li>
+                        <li><a href="#accommodation">Accommodation</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Contact Info</h3>
+                    <p>Group: IT </p>
+                    <p style="margin-top:8px;">
+                        Email: <a href="123456@gamil.com">123456@gamil.com</a>
+                    </p>
+                    <p style="margin-top:8px;">
+                        Web: <a href="https://tourismcambodia.org" target="_blank">Jam dak domain yg</a>
+                    </p>
+                </div>
+
+                <!-- About -->
+                <div class="footer-col">
+                    <h3 class="footer-col-title">About</h3>
+                    <p>A tourism guide for Siem Reap Province, showcasing the rich culture, heritage, food, and accommodation options of Cambodia.</p>
+                </div>
+
+            </div>
+
+            <div class="footer-divider"></div>
+            <p class="footer-copy">© 2026 Siem Reap Province Tourism Guide</p>
+        </footer>
 
     <script src="script.js"></script>
 </body>
