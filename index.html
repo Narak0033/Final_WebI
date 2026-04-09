@@ -5,44 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cambodia Traveling Guide Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Playfair+Display:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul class="nav-list">
-                <li><a href="#home">Homepage</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#provinces">Provinces</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <h1 class="collective-head">Cambodia Traveling Guide Website</h1>
-    </header>
-    <main>
-        <section id="home">
-            <h2 class="collective-head">HomePage</h2>
-        </section>
-
-        <section id="about">
-            <h2 class="collective-head">About</h2>
-        </section>
-
-        <section id="provinces">
-            <h2 class="collective-head">Provinces</h2>
-            <nav id="province-nav">
-                <ul class="province-list">
-                    <li><a href="siem-reap.html">Siem Reap Province</a></li>
-                    <li><a href="sihanoukville.html">Sihanoukville Province</a></li>
-                    <li><a href="kompot.html">Kompot Province</a></li>
+            <div class="nav-inner">
+                <a class="nav-brand" href="#">✦ Cambodia Guide</a>
+                <button class="nav-toggle" onclick="toggleNav()" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-list" id="navList">
+                    <li><a href="#home">Homepage</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#provinces">Provinces</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
-    
-        </section>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <div class="hero-content">
+                <p class="hero-eyebrow">Kingdom of Cambodia</p>
+                <h1 class="hero-title">Cambodia <em>Traveling</em><br>Guide Website</h1>
+                <div class="divider"></div>
+                <p class="hero-sub">Explore the land of ancient temples, golden beaches, and rich Khmer culture.</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="section-wrap" id="home">
+            <section>
+                <div class="section-header">
+                    <p class="section-tag">Welcome</p>
+                    <h2 class="section-title">HomePage</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </section>
+        </div>
+
+        <div class="section-wrap alt-bg" id="about">
+            <section>
+                <div class="section-header">
+                    <p class="section-tag">Who We Are</p>
+                    <h2 class="section-title">About</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </section>
+        </div>
+
+        <div class="section-wrap" id="provinces">
+            <section>
+                <div class="section-header">
+                    <p class="section-tag">Destinations</p>
+                    <h2 class="section-title">Provinces</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <nav id="province-nav">
+                    <ul class="province-list">
+                        <li>
+                            <div class="card reveal">
+                                <div class="card-img-wrap">
+                                    <img src="images/sr/Visiting-site/Angkor.jpg" alt="Angkor Wat" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title"><a href="siem-reap.html">Siem Reap</a></h3>
+                                    <p class="card-desc">Angkor Wat is one of the most famous tourist attractions in Siem Reap, Cambodia. Built in the 12th century, it is known as the largest religious monument in the world. With its stunning Khmer architecture, beautiful carvings, and rich history, Angkor Wat is a must-visit destination for both local and international travelers.</p>
+                                    <div class="card-location">
+                                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                            <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                                        </svg>
+                                        <a href="https://maps.app.goo.gl/xjyxUYuF2jAe7cZ66" target="_blank">Angkor Wat</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="sihanoukville.html">Sihanoukville Province</a></li>
+                        <li><a href="kompot.html">Kompot Province</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
     </main>
 
     <footer id="contact">
-        <h2 class="collective-head">Contact</h2>
+        <h2>Contact Us</h2>
+        <div class="footer-divider"></div>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3 class="footer-col-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="siem-reap.html">Siem Reap</a></li>
+                    <li><a href="sihanoukville.html">Sihanoukville</a></li>
+                    <li><a href="kompot.html">Kompot</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-col-title">Contact Info</h3>
+                <p>Group: ក្តិបITកំសត់</p>
+                <p style="margin-top:8px;">Web: <a href="https://cloudrak.work/" target="_blank">Cambodia Traveling Guide Website</a></p>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-col-title">About</h3>
+                <p>A tourism guide showcasing the rich culture, heritage, food, and accommodation of Cambodia.</p>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <p class="footer-copy">© 2026 Cambodia Traveling Guide · AUPP · INFO 250</p>
     </footer>
     <script src="script.js"></script>
 </body>
