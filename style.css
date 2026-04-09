@@ -21,34 +21,9 @@
 }
 
 body {
-    margin: 0;
     background-color: var(--color-bg);
     color: var(--color-text);
     font-family: 'Nunito', sans-serif;
-}
-
-.collective-head {
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-    color: var(--color-secondary);
-    font-weight: bold;
-    width: 100%;
-}
-
-/* ✅ Province links — plain vertical list, no brown boxes */
-.province-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 0;
-}
-
-.province-list li a {
-    color: var(--color-secondary);
-    font-weight: 700;
-    font-size: 1.1rem;
-    text-decoration: underline;
 }
 
 /* For Sr  */
