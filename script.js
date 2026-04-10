@@ -32,58 +32,60 @@ const obs = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 reveals.forEach(el => obs.observe(el));
 
-// Load the YouTube IFrame Player API code asynchronously.
+// ===============================
+// YOUTUBE HERO BACKGROUND VIDEO
+// ===============================
+
+// Load YouTube API
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+document.head.appendChild(tag);
 
 var player;
+
 function onYouTubeIframeAPIReady() {
     var playerDiv = document.getElementById('player');
-    
-    // 2. Extract settings from data attributes
+
+    // Get settings from HTML
     var vidId = playerDiv.getAttribute('data-video-id');
     var vidStart = parseInt(playerDiv.getAttribute('data-start')) || 0;
     var vidEnd = parseInt(playerDiv.getAttribute('data-end')) || 0;
     var vidSpeed = parseFloat(playerDiv.getAttribute('data-speed')) || 1;
 
     player = new YT.Player('player', {
-        videoId: 'J_0u6Y5PPgA', // Your video ID
+        videoId: vidId,
         playerVars: {
-            'autoplay': 1,
-            'controls': 0,
-            'autohide': 1,
-            'wmode': 'opaque',
-            'origin': window.location.origin,
-            'rel': 0,
-            'mute': 1, // Must be muted to autoplay in most browsers
-            'loop': 1,
-            'playlist': 'J_0u6Y5PPgA', // Required for loop
-            'start': 0,
-            'end': 103 // 1:43 in seconds (60 + 43 = 103)
+            autoplay: 1,
+            controls: 0,
+            mute: 1,
+            start: vidStart,
+            end: vidEnd,
+            rel: 0,
+            showinfo: 0,
+            modestbranding: 1
         },
         events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
+            onReady: function (event) {
+                event.target.setPlaybackRate(vidSpeed);
+                event.target.playVideo();
+            },
+            onStateChange: onPlayerStateChange
         }
     });
 }
 
-function onPlayerReady(event) {
-    event.target.playbackRate(vidSpeed);
-    event.target.playVideo();
-
-    setTimeout(function() {
-        event.target.setPlaybackRate(vidSpeed);
-        console.log("Speed set to: " + event.target.getPlaybackRate()); // Check your console!
-    }, 500);
-}
-
-// Ensure it loops exactly at 1:43 if the 'loop' var fails
+// Force loop back to the SPECIFIED start time
 function onPlayerStateChange(event) {
+    // 1. Check if the video has ended (YT.PlayerState.ENDED is 0)
     if (event.data === YT.PlayerState.ENDED) {
-        player.seekTo(0);
-        player.playVideo();
+        var playerDiv = document.getElementById('player');        
+        // 2. Get the original start time from your HTML attribute
+        var vidStart = parseInt(playerDiv.getAttribute('data-start')) || 0;
+        
+         // Small delay prevents YouTube override
+        setTimeout(() => {
+            player.seekTo(vidStart, true);
+            player.playVideo();
+        }, 50);
     }
 }
