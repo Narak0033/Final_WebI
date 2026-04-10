@@ -3,28 +3,512 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kompot Province Page</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Siem Reap Province Page</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛕</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Playfair+Display:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="collective-head">
+    <header>
+          <!-- Nav -->
         <nav>
-            <ul class="nav-list">
-                <li>Visiting Site</li>
-                <li>Cultural Heritage</li>
-                <li>Traditional Food</li>
-                <li>Accomodation</li>
-                <li>Mapping</li>
-            </ul>
+            <div class="nav-inner">
+                <a class="nav-brand" href="index.html">✦ Cambodia Guide</a>
+
+                <!-- mobile only For menu -->
+                <button class="nav-toggle" onclick="toggleNav()" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-list" id="navList">
+                    <li><a href="#visiting">Visiting Sites</a></li>
+                    <li><a href="#food">Traditional Food</a></li>
+                    <li><a href="#accommodation">Accommodation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-        <h1 class="collective-head">Kompot Province</h1>
+
+        <!-- Hero meaning content display oy ke see jit nav -->
+        <div class="hero">
+            <div id="player"
+                data-video-id="OKOUhK8xP7g"
+                data-start="0"
+                data-end="65"
+                data-speed="0.8">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="hero-eyebrow">Kingdom of Cambodia</p>
+                <h1 class="hero-title">Discover <em>Kampot</em><br>Province</h1>
+                <div class="divider"></div>
+                <p class="hero-sub">Kampot is a laid-back riverside province in southern Cambodia famous for its historic colonial architecture, world-renowned pepper plantations, salt fields, and durian.</p>
+            </div>
+        </div>
     </header>
 
+    <main>
+
+        <!-- Section 1: Visiting sites-->
+        <div class="section-wrap" id="visiting">
+        <section>
+            <div class="section-header reveal">
+                <p class="section-tag">Explore</p>
+                <h2 class="section-title">Cultural Heritage</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="cards-grid"> 
+                <!-- Kampot Provincial Museum -->
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\kp\Visiting-site\Kampot Provincial Museum.jpg" alt="Kampot Provincial Museum" loading="lazy">
+                        <span class="card-badge">Museum</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Kampot Provincial Museum</h3>
+                        <p class="card-desc">Kampot Provincial Museum is a charming cultural attraction located in a restored French colonial building in the heart of Kampot. The museum offers visitors a fascinating journey through the province’s rich history, from ancient times to the modern era, through informative panels, historical photographs, and archaeological artifacts. With its blend of heritage architecture and educational exhibits, it is an ideal place for travelers who want to gain a deeper appreciation of Kampot’s cultural and historical significance. </p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/63g5jVx7sFWRXJ2DA" target="_blank">Kampot Provincial Museum</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bokor Mountain -->
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\kp\Visiting-site\Bokor Mountain.jpg" alt="Bokor Mountain" loading="lazy">
+                        <span class="card-badge">Nature & History</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Bokor Mountain</h3>
+                        <p class="card-desc">Bokor Mountain is a cultural and historical destination in Kampot, known for its French colonial heritage, religious sites, and scenic mountain setting. Visitors can explore landmarks such as the old Bokor Hill Station, abandoned church, Buddhist wat, and royal-era buildings, which reflect Cambodia’s rich history and diverse cultural influences.</p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/ZJAESwgV4rDo6wtV6" target="_blank">Bokor Mountain</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Nature -->
+            <div class="section-header reveal" style="margin-top:56px;">
+                <p class="section-tag">Nature</p>
+                <h2 class="section-title">Natural Attractions</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="cards-grid">
+        
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\kp\Visiting-site\Popokvil Waterfall.jpg" alt="Popokvil Waterfall" loading="lazy">
+                        <span class="card-badge">Waterfall</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Popokvil Waterfall</h3>
+                        <p class="card-desc">Popokvil Waterfall is one of Bokor Mountain’s most beautiful natural attractions, known for its refreshing atmosphere and scenic surroundings. Surrounded by lush forest, the waterfall flows in two tiers, creating a peaceful and cool environment that is perfect for relaxing and enjoying nature. During the rainy season, the water flow becomes stronger, making it an especially impressive sight for visitors. </p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/PhJjW7KwWEHxPNn76" target="_blank">Popokvil Waterfall</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\kp\Visiting-site\Phnom Chhngok Cave.jpg" alt="Phnom Chhngok Cave Temple" loading="lazy">
+                        <span class="card-badge">Cave & Temple</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Phnom Chhngok Cave Temple</h3>
+                        <p class="card-desc">Phnom Chhngok Cave Temple is a unique attraction that blends natural beauty with ancient history. Located inside a limestone cave, it features stunning stalactites and a small brick temple dating back to the 7th century. Surrounded by peaceful countryside and rice fields, it offers visitors a quiet and scenic place to explore while learning about Cambodia’s early cultural heritage. </p>
+                        <div class="card-location">
+                             <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/vx8DL4ztrK5y8w9s5" target="_blank">Phnom Chhngok Cave</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\kp\Visiting-site\Kampot Salt Fields.jpg" alt="Kampot Salt Fields" loading="lazy">
+                        <span class="card-badge">Salt Fields</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Kampot Salt Fields</h3>
+                        <p class="card-desc">Kampot Salt Fields are a unique cultural and natural attraction where visitors can witness traditional salt production in Cambodia. Stretching across wide open plains, the salt fields create beautiful reflective landscapes, especially during sunrise and sunset. Local farmers harvest salt by hand using age-old methods, offering visitors a chance to learn about this important local industry and way of life. The Kampot Salt Fields are a must-visit for those interested in culture, photography, and authentic rural experiences. </p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/FQ8rLmQY2qTGXNVn7" target="_blank">Kampot Salt Fields</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\kp\Visiting-site\La Plantation.jpg" alt="La Plantation" loading="lazy">
+                        <span class="card-badge">Farm</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">La Plantation</h3>
+                        <p class="card-desc">La Plantation is a famous pepper farm where visitors can discover the world-renowned Kampot pepper and its traditional cultivation. Surrounded by beautiful countryside, the farm offers guided tours that explain the growing process, harvesting methods, and different types of pepper. Visitors can also enjoy pepper tasting experiences and learn why Kampot pepper is highly valued worldwide. La Plantation is a perfect destination for those interested in agriculture, local culture, and authentic experiences in Kampot. </p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/enhNYVEXsnHqhovr9" target="_blank">La Plantation</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\kp\Visiting-site\Teuk Chhou Rapids.jpg" alt="Teuk Chhou Rapids" loading="lazy">
+                        <span class="card-badge">Rapids</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Teuk Chhou Rapids</h3>
+                        <p class="card-desc">Teuk Chhou Rapids is a popular natural attraction in Kampot, known for its clear flowing water, fresh air, and peaceful surroundings. The shallow rapids create a cool and refreshing spot where visitors can relax, swim, and enjoy nature. With its riverside huts, local food, and scenic greenery, it is an ideal place for a relaxing day out with friends and family. </p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/XJcJkRba8MReveqx9" target="_blank">Teuk Chhou Rapids</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- Resort -->
+             <div class="section-header reveal" style="margin-top:56px;">
+                <p class="section-tag">Resorts & Nightlife</p>
+                <h2 class="section-title">Resorts & Entertainment</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="cards-grid">
+        
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\kp\Visiting-site\Entanou Slide - River Park.jpg" alt="Entanou Slide" loading="lazy">
+                        <span class="card-badge">Resort</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Entanou Slide River Park</h3>
+                        <p class="card-desc">Entanou Slide - River Park is a fun riverside attraction where visitors can relax and enjoy nature. Surrounded by greenery, it features a natural-style water slide and a calm river, making it a great place for swimming, playing, and spending time with friends and family. </p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/JmQVnTQqKurstZUz7" target="_blank">Entanou Slide River Park</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\kp\Visiting-site\Arcadia Waterpark.jpg" alt="Arcadia Waterpark" loading="lazy">
+                        <span class="card-badge">Resort</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Arcadia Waterpark</h3>
+                        <p class="card-desc">Arcadia Waterpark is a lively riverside attraction known for its fun water activities and adventurous atmosphere. Set along the Kampot River, it offers exciting experiences such as ziplining, rope swings, and water slides. It is a great place for visitors who enjoy outdoor adventure, swimming, and social activities. With its relaxed vibe and scenic surroundings, Arcadia Waterpark is perfect for a fun and memorable day in Kampot.</p>
+                        <div class="card-location">
+                             <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/ecXHgbjuTyxLWQuG6" target="_blank">Arcadia Waterpark Hostel</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\kp\Visiting-site\Kampot Night Market.jpg" alt="Kampot Night Market" loading="lazy">
+                        <span class="card-badge">Night Life</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Kampot Night Market</h3>
+                        <p class="card-desc">Kampot Night Market is a lively evening destination where visitors can experience local culture, food, and daily life. The market is filled with street food stalls, small shops, and vendors selling clothes, souvenirs, and handmade items. It is a great place to try Cambodian dishes, enjoy the vibrant atmosphere, and explore the local lifestyle at night. Kampot Night Market is perfect for an evening walk, food tasting, and cultural experience.</p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/BQrcjpDbVsPYLt749" target="_blank">Kampot Night Market</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\kp\Visiting-site\vanna-restaurant-bar.jpg" alt="Vanna Restaurant & Bar" loading="lazy">
+                        <span class="card-badge">Restaurant & Bar</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Vanna Restaurant & Bar</h3>
+                        <p class="card-desc"> Vanna Restaurant & Bar is a cozy riverfront restaurant in Kampot known for its relaxed atmosphere and flavorful mix of Khmer, fusion, and Western cuisine. Popular dishes include smoked duck lok lak, sweet mango snake fish, rosemary and lime salmon, pomelo chicken salad, saraman, and Kampot green pepper squid. The restaurant is vegetarian-friendly, offers vegan options, and is praised for its welcoming service and scenic waterfront setting. </p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/1u6AkL2Upae9Ewyh8" target="_blank">Vanna Restaurant & Bar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\kp\Visiting-site\Ecran Noodle & Dumplings.jpg" alt="Ecran Noodle & Dumplings" loading="lazy">
+                        <span class="card-badge">Restaurant</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Ecran Noodle & Dumplings</h3>
+                        <p class="card-desc">Ecran Noodle & Dumplings is a cozy riverside restaurant in Kampot known for its freshly made hand-pulled noodles and homemade dumplings. With a focus on simple, authentic flavors, the restaurant offers comforting dishes such as rich noodle soups, stir-fried noodles, and a variety of dumplings prepared on-site. Its relaxed atmosphere, friendly service, and affordable prices make it a favorite spot for both locals and visitors looking for a satisfying and casual dining experience by the river.</p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/bHfNSWzMjvk8gyUC7" target="_blank">Ecran Noodle & Dumplings</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Section 2: TRADITIONAL FOOD-->
+        <div class="section-wrap dark-bg" id="food">
+            <section>
+                <div class="section-header reveal">
+                    <p class="section-tag"> Cambodian Taste</p>
+                    <h2 class="section-title">Traditional Food</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="food-grid">
+            
+                    <div class="food-card reveal">
+                        <div class="card-img-wrap">
+                            <img src="images\kp\food\Kampot Pepper Crab.jpg" alt="Kampot Pepper Crab" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Kampot Pepper Crab (or Seafood with Kampot Pepper)</h3>
+                            <p class="card-desc">One of the most iconic dishes in Kampot (and nearby Kep) is crab cooked with fresh green Kampot pepper. The pepper is world-famous for its strong aroma and slightly spicy flavor, making this dish a must-try for seafood lovers.</p>
+                        </div>
+                    </div>
+            
+                    <div class="food-card reveal">
+                        <div class="card-img-wrap">
+                            <img src="images\kp\food\Kampot Green Pepper Squid.jpg" alt="Kampot Green Pepper Squid" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Kampot Green Pepper Squid</h3>
+                            <p class="card-desc">Kampot Green Pepper Squid is a signature Cambodian stir-fry featuring fresh squid, aromatic green Kampot peppercorns, and savory sauces. It is typically made by wok-tossing squid with fresh green peppercorns, garlic, onion, fish sauce, oyster sauce, and coconut milk for a savory, slightly spicy dish. </p>
+                        </div>
+                    </div>
+            
+                    <div class="food-card reveal">
+                        <div class="card-img-wrap">
+                            <img src="images\kp\food\Num Banh Chok Teuk Mhech.jpg" alt="Nom Banh Chok Teuk Mhech" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Num Banh Chok Teuk Mhech</h3>
+                            <p class="card-desc">Num Banh Chok Teuk Mhech, also known as Kampot’s iconic noodle soup, is a traditional dish that beautifully captures the essence of local cuisine. It begins with fresh rice noodles made from finely ground rice flour, offering a soft and delicate texture that pairs perfectly with its rich, aromatic broth. The broth is infused with classic Khmer ingredients such as lemongrass, galangal, kaffir lime leaves, and a touch of fish sauce, creating a fragrant and flavorful base. What makes this dish truly special is its vibrant topping of fresh herbs and vegetables, including basil, cucumber, and banana flower, often served with Kampot fish. </p>
+                        </div>
+                    </div>
+            
+                    <div class="food-card reveal">
+                        <div class="card-img-wrap">
+                            <img src="images\kp\food\Crab Fried Rice.jpg" alt="Crab Fried Rice " loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Crab Fried Rice </h3>
+                            <p class="card-desc">Crab Fried Rice is a beloved dish that showcases Kampot’s abundant seafood and vibrant flavors.The dish starts with fragrant jasmine rice, cooked to perfection and infused with the subtle aroma of pandan leaves. What sets Crab Fried Rice apart is its simplicity and elegance – the dish allows the natural sweetness of the crab meat to shine, complemented by the savory flavors of the fried rice. It’s a dish that’s both comforting and sophisticated, perfect for savoring with friends and family.</p>
+                        </div>
+                    </div>
+            
+                    <div class="food-card reveal">
+                        <div class="card-img-wrap">
+                            <img src="images\kp\food\Sweet Noodles Wrap.jpg" alt="Sweet Noodles Wrap" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Sweet Noodles Wrap</h3>
+                            <p class="card-desc">Delicate rice noodles are wrapped around a medley of fresh, vibrant ingredients, including shredded coconut, palm sugar, and sesame seed. Also, each bite offers a symphony of flavors and textures, with the softness of the noodles contrasting perfectly with the crunch of the coconut and the rich sweetness of the palm sugar. It’s a culinary masterpiece that’s sure to tantalize your taste buds and leave you craving more.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Section 3: ACCOMMODATION-->
+
+        <div class="section-wrap alt-bg" id="accommodation">
+            <section>
+                <div class="section-header reveal">
+                    <p class="section-tag">Stay</p>
+                    <h2 class="section-title">Accommodation</h2>
+                    <div class="section-divider"></div>
+                </div>
+            
+                <div class="tabs reveal">
+                    <button class="tab-btn active" onclick="showTab('hotels')">Hotels</button>
+                    <button class="tab-btn" onclick="showTab('guesthouses')">Guest Houses</button>
+                </div>
+            
+                <!-- Hotels -->
+                <div class="tab-panel cards-grid active" id="tab-hotels">
+            
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="images\kp\Accomodation\Villa Romduol.jpg" alt="Villa Romduol" loading="lazy">
+                            <span class="card-badge">5 Star</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Villa Romduol</h3>
+                            <p class="card-desc">Villa Romduol in Kampot offers a peaceful and family-friendly stay with comfortable air-conditioned rooms, private bathrooms, free WiFi, and scenic garden or mountain views. Guests can enjoy Cambodian cuisine at the traditional on-site restaurant, relax at the bar or outdoor terrace, and make use of convenient services such as a 24-hour front desk, concierge support, private check-in, and free parking. Surrounded by a lovely garden and outdoor seating areas, the hotel provides a relaxing atmosphere while remaining close to local attractions, making it a great choice for travelers seeking comfort and convenience in Kampot.</p>
+                            <div class="card-location">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                                </svg>
+                            <a href="https://maps.app.goo.gl/GPZqmKydATKG2qd1A" target="_blank">Villa Romduol</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="images\kp\Accomodation\Kampot Sweet Boutique.jpg" alt="Kampot Sweet Boutique" loading="lazy">
+                            <span class="card-badge">4 Star</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Kampot Sweet Boutique</h3>
+                            <p class="card-desc">Kampot Sweet Boutique offers a comfortable and relaxing stay in Kampot, featuring family rooms with air-conditioning, private balconies, garden views, and modern amenities such as free WiFi and minibars. Guests can enjoy excellent facilities including a fitness centre, sun terrace, and a year-round outdoor swimming pool, as well as a restaurant and bar serving American cuisine and local specialties. With free bicycles, outdoor dining spaces, and nearby attractions such as Kampot Pagoda and Phnom Chisor, the hotel is a great choice for travelers looking for both comfort and convenience.</p>
+                            <div class="card-location">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                                </svg>
+                                <a href="https://maps.app.goo.gl/BHTzUc5bKi45CTV16" target="_blank">Kampot Sweet Boutique</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="images\kp\Accomodation\Hotel Old Cinema.jpg" alt="Hotel Old Cinema" loading="lazy">
+                            <span class="card-badge">3 Star</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Hotel Old Cinema</h3>
+                            <p class="card-desc">Hotel Old Cinema in Kampot offers a stylish and comfortable stay with air-conditioned rooms, private bathrooms, balconies, free WiFi, and modern amenities such as flat-screen TVs and work desks. Guests can relax in the saltwater swimming pool, enjoy the lush garden and terrace, or dine at the on-site restaurant, which serves Asian and international cuisine in a welcoming atmosphere. With a variety of breakfast options and a convenient location near attractions such as Kampot Pagoda and Kampot Train Station, the hotel is an excellent choice for travelers seeking both comfort and charm in Kampot.</p>
+                            <div class="card-location">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                                </svg>
+                                <a href="https://maps.app.goo.gl/C1dFAHKjgW3Uw8wQ8" target="_blank">Hotel Old Cinema</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            
+                <!-- Guest Houses -->
+                <div class="tab-panel cards-grid" id="tab-guesthouses">
+            
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="images\kp\Accomodation\Coconut Lodge.jpg" alt="Coconut Lodge" loading="lazy">
+                            <span class="card-badge">Guest House</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Coconut Lodge</h3>
+                            <p class="card-desc">Coconut Lodge in Kampot offers a comfortable and relaxing stay with family rooms featuring air-conditioning, private bathrooms, garden views, and free WiFi. Guests can enjoy a peaceful atmosphere with excellent facilities such as free bicycles, a garden, terrace, outdoor dining area, and in-room amenities like a kitchenette and streaming services. The guest house also serves a delicious breakfast with continental, à la carte, and vegetarian options, including local specialties and warm dishes. Conveniently located near attractions such as Kampot Pagoda and Kampot Train Station, Coconut Lodge is a great choice for travelers looking for comfort, convenience, and a cozy experience in Kampot.</p>
+                            <div class="card-location">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                                </svg>
+                                <a href="https://maps.app.goo.gl/dMnRWDxfPAqoXq6k8" target="_blank">Coconut Lodge</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="images\kp\Accomodation\Onederz Kampot.jpg" alt="Onederz Kampot" loading="lazy">
+                            <span class="card-badge">Guest House</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Onederz Kampot</h3>
+                            <p class="card-desc">Onederz Kampot offers a comfortable and modern stay in Kampot, featuring well-equipped rooms with air-conditioning, private or shared bathroom options, balconies, and useful amenities such as TVs, refrigerators, and electric kettles. Guests can enjoy excellent facilities including an infinity swimming pool, sun terrace, garden, restaurant, bar, and free WiFi, creating a relaxing atmosphere for both leisure and socializing. The on-site restaurant serves American and Cambodian cuisine, while the attentive staff, daily housekeeping, and free private parking add extra convenience. Located near attractions such as Kampot Pagoda, Kampot Train Station, and Teuk Chhou Rapids, Onederz Kampot is a great choice for travelers seeking comfort, cleanliness, and easy access to local highlights.</p>
+                            <div class="card-location">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                                </svg>
+                                <a href="https://maps.app.goo.gl/menfEghqZzauhAyn9" target="_blank">Onederz Kampot</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+        
+            
+            </section>
+            </div>
+    </main>
+
+    <!-- FOOTER -->
     <footer id="contact">
-        <h2 class="collective-head">Contact</h2>
-    </footer>
-    
+        <h2>Contact Us</h2>
+        <div class="footer-divider"></div>
+            <div class="footer-grid">
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home Page</a></li>
+                        <li><a href="sihanoukville.html">Sihanoukville</a></li>
+                        <li><a href="kompot.html">Kampot</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Contact Info</h3>
+                    <p>Group: ក្តិបITកំសត់ </p>
+                    <p style="margin-top:8px;">
+                        Email: <a href="123456@gamil.com">123456@gamil.com</a>
+                    </p>
+                    <p style="margin-top:8px;">
+                        Tel: <a href="+12 345-678-910">+12 345-678-910</a>
+                    </p>
+                    <p style="margin-top:8px;">
+                        Web: <a href="https://cloudrak.work/" target="_blank">Cambodia Traveling Guide Website</a>
+                    </p>
+                </div>
+
+                <!-- About -->
+                <div class="footer-col">
+                    <h3 class="footer-col-title">About</h3>
+                    <p>A tourism guide for Siem Reap Province, showcasing the rich culture, heritage, food, and accommodation options of Cambodia.</p>
+                </div>
+
+            </div>
+
+            <div class="footer-divider"></div>
+            <p class="footer-copy">© 2026 Siem Reap Province Tourism Guide</p>
+        </footer>
 
     <script src="script.js"></script>
 </body>
