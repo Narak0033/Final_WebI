@@ -32,3 +32,13 @@ const obs = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 reveals.forEach(el => obs.observe(el));
     
+//Pop up image 
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    document.getElementById("adPopup").style.display = "flex";
+  }, 4000);
+});
+
+function closePopup() {
+  document.getElementById("adPopup").style.display = "none";
+}
