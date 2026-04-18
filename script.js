@@ -42,3 +42,61 @@ window.addEventListener("load", function () {
 function closePopup() {
   document.getElementById("adPopup").style.display = "none";
 }
+
+// ===============================
+// YOUTUBE HERO BACKGROUND VIDEO
+// ===============================
+
+// Load YouTube API
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+document.head.appendChild(tag);
+
+var player;
+
+function onYouTubeIframeAPIReady() {
+    var playerDiv = document.getElementById('player');
+
+    // Get settings from HTML
+    var vidId = playerDiv.getAttribute('data-video-id');
+    var vidStart = parseInt(playerDiv.getAttribute('data-start')) || 0;
+    var vidEnd = parseInt(playerDiv.getAttribute('data-end')) || 0;
+    var vidSpeed = parseFloat(playerDiv.getAttribute('data-speed')) || 1;
+
+    player = new YT.Player('player', {
+        videoId: vidId,
+        playerVars: {
+            autoplay: 1,
+            controls: 0,
+            mute: 1,
+            start: vidStart,
+            end: vidEnd,
+            rel: 0,
+            showinfo: 0,
+            modestbranding: 1
+        },
+        events: {
+            onReady: function (event) {
+                event.target.setPlaybackRate(vidSpeed);
+                event.target.playVideo();
+            },
+            onStateChange: onPlayerStateChange
+        }
+    });
+}
+
+// Force loop back to the SPECIFIED start time
+function onPlayerStateChange(event) {
+    // 1. Check if the video has ended (YT.PlayerState.ENDED is 0)
+    if (event.data === YT.PlayerState.ENDED) {
+        var playerDiv = document.getElementById('player');        
+        // 2. Get the original start time from your HTML attribute
+        var vidStart = parseInt(playerDiv.getAttribute('data-start')) || 0;
+        
+         // Small delay prevents YouTube override
+        setTimeout(() => {
+            player.seekTo(vidStart, true);
+            player.playVideo();
+        }, 50);
+    }
+}
