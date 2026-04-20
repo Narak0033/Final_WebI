@@ -349,14 +349,6 @@ main    section {
             font-weight: 700;
             margin-bottom: 8px;
         }
-
-        .card-title a {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.15rem;
-            color: var(--color-secondary);
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
  
         .card-desc {
             font-size: 0.88rem;
