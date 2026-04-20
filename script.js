@@ -100,3 +100,35 @@ function onPlayerStateChange(event) {
         }, 50);
     }
 }
+
+window.fbAsyncInit = function () {
+    FB.init({ xfbml: true, version: 'v19.0' });
+
+    FB.Event.subscribe('xfbml.ready', function (msg) {
+        if (msg.type === 'video') {
+            var playerDiv = document.getElementById('player');
+            var vidStart = parseInt(playerDiv.getAttribute('data-start')) || 0;
+            var vidSpeed = parseFloat(playerDiv.getAttribute('data-speed')) || 1;
+
+            var fbPlayer = msg.instance;
+
+            fbPlayer.seek(vidStart);       // Jump to your start time
+            fbPlayer.setVolume(0);        // Mute (no direct mute method, use volume 0)
+            fbPlayer.play();
+            fbPlayer.subscribe('finishedPlaying', function () {
+                setTimeout(() => {
+                    fbPlayer.seek(vidStart);
+                    fbPlayer.play();
+                }, 50);
+            });
+        }
+    });
+};
+
+(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));

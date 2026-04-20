@@ -3,27 +3,492 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sihanoukville Province Page</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Mondulkiri Province Page</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛕</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Playfair+Display:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+          <!-- Nav -->
         <nav>
-            <ul class="nav-list">
-                <li>Visiting Site</li>
-                <li>Cultural Heritage</li>
-                <li>Traditional Food</li>
-                <li>Accomodation</li>
-                <li>Mapping</li>
-            </ul>
+            <div class="nav-inner">
+                <a class="nav-brand" href="index.html">✦ Cambodia Guide</a>
+
+                <!-- mobile only For menu -->
+                <button class="nav-toggle" onclick="toggleNav()" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-list" id="navList">
+                    <li><a href="#visiting">Visiting Sites</a></li>
+                    <li><a href="#food">Traditional Food</a></li>
+                    <li><a href="#accommodation">Accommodation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-        <h1 class="collective-head">Mondulkiri Province</h1>
+
+        <!-- Hero meaning content display oy ke see jit nav -->
+        <div class="hero">
+            <div id="player" data-type="facebook" data-start="32">
+                <div class="fb-video"
+                    data-href="https://www.facebook.com/ASIADMCGroup/videos/504216349438324/"
+                    data-width="auto"
+                    data-autoplay="true"
+                    data-allowfullscreen="false"
+                    data-show-text="false">
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="hero-eyebrow">Kingdom of Cambodia</p>
+                <h1 class="hero-title">Discover <em>Mondulkiri</em><br>Province</h1>
+                <div class="divider"></div>
+                <p class="hero-sub">a serene, mountainous province in eastern Cambodia renowned for its lush landscapes, cooler climate, and unique indigenous Bunong culture, serving as a premier destination for ethical elephant conservation and eco-tourism.</p>
+            </div>
+        </div>
     </header>
 
+    <main>
+
+        <!-- Section 1: Visiting sites-->
+        <div class="section-wrap" id="visiting">
+        <section>
+            <!-- Nature -->
+            <div class="section-header reveal" style="margin-top:56px;">
+                <p class="section-tag">Nature</p>
+                <h2 class="section-title">Natural Attractions</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="cards-grid">
+        
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\mondulkiri\Visiting-site\Busrawaterfall.jpg" alt="Kampong Phluk" loading="lazy">
+                        <span class="card-badge">Busra Waterfall</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Busra Waterfall</h3>
+                        <p class="card-desc">Bousra Waterfall is one of the most famous and beautiful waterfalls in Mondulkiri, located about 35 km from Sen Monorom. Known for its powerful two-tier cascade, it offers stunning views, especially during the rainy season. Surrounded by lush forest, the site is ideal for sightseeing, photography, and relaxing in nature. Bousra is also an important eco-tourism destination that attracts both local and international visitors.</p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/LtAq62XFc79oefjXA" target="_blank">Busra Waterfall</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\mondulkiri\Visiting-site\ChreyThomWater.jpg" alt="Chrey Thom Waterfall" loading="lazy">
+                        <span class="card-badge">Chrey Thom Waterfall</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Chrey Thom Waterfall</h3>
+                        <p class="card-desc">Chrey Thom Waterfall is a beautiful natural attraction in Mondulkiri, located about 20–43 km from Sen Monorom. Surrounded by lush forests and plantations, it offers a peaceful environment with fresh air and scenic views. The waterfall changes with the seasons(taller in the dry season and wider in the rainy season)but remains accessible year-round. Visitors can enjoy picnicking, hiking, swimming, and exploring nearby ethnic villages.</p>
+                        <div class="card-location">
+                             <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/5LRCw4nN8KVpTWRR8" target="_blank">Chrey Thom Waterfall</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\mondulkiri\Visiting-site\gold.jpg" alt="Renaissance Mineral" loading="lazy">
+                        <span class="card-badge">Renaissance Mineral</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Renaissance Mineral</h3>
+                        <p class="card-desc">The Memang Gold Mines Area is a popular eco-tourism destination in Mondulkiri, located about 45 km from Sen Monorom. Surrounded by forests and scenic landscapes, it offers a peaceful and adventurous experience for visitors.
+Known for its rich biodiversity, the area is home to various wildlife and plant species. Visitors can enjoy trekking, camping, and nature exploration, making it a great spot for adventure and nature lovers.</p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/4cQkviFzCwgceUsh9" target="_blank">Renaissance Mineral</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\mondulkiri\Visiting-site\senmonorum.jpg" alt="Sen Monorum Waterfall" loading="lazy">
+                        <span class="card-badge">Sen Monorum Waterfall</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Sen Monorum Waterfall</h3>
+                        <p class="card-desc">Sen Monorom Waterfall is a popular local attraction located about 5 km from Sen Monorom town. Easily accessible by a red soil road lined with rubber, coffee, and cashew plantations, it is a favorite gathering spot for locals during holidays and festivals. The waterfall has three stages, ranging from gentle flows to stronger cascades, offering spaces for relaxing and enjoying nature. With its peaceful setting and close proximity to town, it’s a perfect spot for a quick nature escape in Mondulkiri.</p>
+                        <div class="card-location">
+                             <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/Ndd7zL2Te9rDsXuz6" target="_blank">Sen Monorum Waterfall</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\mondulkiri\Visiting-site\Jahoo.jpg" alt="Jahoo" loading="lazy">
+                        <span class="card-badge">Jahoo</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Jahoo</h3>
+                        <p class="card-desc">Jahoo is a community-owned eco-tourism project in Mondulkiri Province, known for its focus on wildlife conservation and immersive nature experiences. Visitors can observe the endangered Southern Yellow-Cheeked Crested Gibbon and other wildlife such as langurs, macaques, and diverse bird species in their natural habitat. The camp supports Indigenous Bunong communities through community-based tourism, offering insights into their culture and forest knowledge. With simple, eco-friendly bamboo accommodations and guided rainforest treks, Jahoo promotes sustainable travel.</p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/3hSroerxU6oMzdig7" target="_blank">Kampong Phluk</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\mondulkiri\Visiting-site\PhnomPrech.jpg" alt="Phnom Prech" loading="lazy">
+                        <span class="card-badge">Phnum Prech Wildlife Sanctuary</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Phnom Prech Sanctuary</h3>
+                        <p class="card-desc">Phnom Prech Sanctuary is a popular natural attraction in Mondulkiri, located in the Eastern Plains known for its vast forests and scenic landscapes. It is part of a large conservation area supported by the Cambodian government and the World Wide Fund for Nature (WWF), protecting diverse wildlife. The sanctuary is home to endangered species such as Asian elephants, wild water buffalo, and giant ibises, making it an important site for biodiversity conservation.</p>
+                        <div class="card-location">
+                             <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/qbr2c5CzToC5D7YM9" target="_blank">Phnom Prech Sanctuary</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\mondulkiri\Visiting-site\Phnomdoskromum.jpg" alt="Phnom Doh Krormom Shrine" loading="lazy">
+                        <span class="card-badge">Phnom Doh Krormom Shrine</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Phnom Doh Krormom Shrine</h3>
+                        <p class="card-desc">Yok Sros Phlom (Phnom Dos Kramom) is a scenic hill located just 3 km from Sen Monorom. Known for its grassy landscape and gentle slopes, it offers a unique natural view unlike dense forest areas. From the top, visitors can enjoy panoramic views of Mondulkiri town and surrounding mountains. It’s a peaceful spot ideal for sightseeing and relaxing in nature.</p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/fCtwjtP2nhFPm2oY9" target="_blank">Phnom Doh Krormom Shrine</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\mondulkiri\Visiting-site\ProjElephant.jpg" alt="Mondulkiri Project Elephant Sanctuary" loading="lazy">
+                        <span class="card-badge">Mondulkiri Project Elephant Sanctuary</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Mondulkiri Project Elephant Sanctuary</h3>
+                        <p class="card-desc">Meet these benevolent giants at the Elephant Valley Project, an ethical and conservation project that provides a refuge for retired and rescued elephants. Learn about these majestic creatures roaming freely in their natural habitat, learn about their behavior, and participate in activities like feeding and bathing. It is an experience that touches the heart, combining respect for nature and responsible tourism. An unforgettable adventure, one of the things to do in Mondulkiri for all wildlife and nature lovers, not to be missed.</p>
+                        <div class="card-location">
+                             <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/JzDnLEcymJooyd9LA" target="_blank">Mondulkiri Project Elephant Sanctuary</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Restaurants -->
+             <div class="section-header reveal" style="margin-top:56px;">
+                <p class="section-tag">Restaurants & Cafes</p>
+                <h2 class="section-title">Local Dining</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="cards-grid">
+        
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\mondulkiri\Visiting-site\oromisGuesthous.jpg" alt="Oromis Guesthouse & Restaurant" loading="lazy">
+                        <span class="card-badge">Oromis Guesthouse & Restaurant</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Oromis Guesthouse & Restaurant</h3>
+                        <p class="card-desc">Oromis Guest House and Restaurant is a great place to enjoy authentic Khmer cuisine in Mondulkiri. Known for its fresh local ingredients, it offers a variety of dishes from light soups to rich curries and grilled meats.
+With a relaxing atmosphere and terrace views of greenery, it’s a perfect spot for breakfast, lunch, or dinner. Friendly service and quality food make it a favorite among both locals and travelers.</p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/bJzPjw9CVTEMBcKV7" target="_blank">Oromis Guesthouse & Restaurant</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\mondulkiri\Visiting-site\RamornPub.jpg" alt="Ramorn Pub Mondulkiri" loading="lazy">
+                        <span class="card-badge">Ramorn Pub Mondulkiri</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Ramorn Pub Mondulkiri</h3>
+                        <p class="card-desc">Ramorn Pub Mondulkiri is a popular dining spot in Sen Monorom, known for its flavorful Khmer dishes made with fresh, local ingredients. The menu includes a variety of options, from soups to grilled meats.
+With a casual and friendly atmosphere, it’s a great place to relax, especially in the evening when the vibe becomes lively with music. It’s a convenient and enjoyable spot for both locals and travelers.</p>
+                        <div class="card-location">
+                             <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/ZAJvRzos4XT8LkN87" target="_blank">Ramorn Pub Mondulkiri</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\mondulkiri\Visiting-site\Thehangout.jpg" alt="The Hangout" loading="lazy">
+                        <span class="card-badge">The Hangout</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">The Hangout</h3>
+                        <p class="card-desc">The Hangout is a popular restaurant in Sen Monorom, Mondulkiri, known for its mix of local Khmer dishes and Western favorites. Popular menu items include veggie burgers, chicken parmesan, and vegan Khmer options, along with flavorful local coffee. With its relaxed atmosphere, greenery, and pool table, it’s a great place to unwind after a day of exploring. Friendly staff, generous portions, and reasonable prices make it a top dining spot for visitors.</p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/PHKPz1DQxSDtF8aK7" target="_blank">The Hangout</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images\mondulkiri\Visiting-site\BambooCafe.jpg" alt="Bamboo Cafe" loading="lazy">
+                        <span class="card-badge">Bamboo Cafe</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Bamboo Cafe</h3>
+                        <p class="card-desc">Bamboo Cafe is a popular family-run restaurant in Sen Monorom, known for its warm atmosphere and authentic dining experience. Surrounded by bamboo and greenery, it’s a relaxing place to enjoy a meal. The menu offers a mix of Khmer and Western dishes, with highlights like vegetable curry and traditional pumpkin stems with chicken. With generous portions, fair prices, and friendly service, Bamboo Cafe is a great spot to enjoy local cuisine and connect with other travelers.</p>
+                        <div class="card-location">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/jEETukJmiHCapxsj8" target="_blank">Bamboo Cafe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Section 2: TRADITIONAL FOOD-->
+        <div class="section-wrap dark-bg" id="food">
+            <section>
+                <div class="section-header reveal">
+                    <p class="section-tag"> Cambodian Taste</p>
+                    <h2 class="section-title">Traditional Food</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="food-grid">
+            
+                    <div class="food-card reveal">
+                        <div class="card-img-wrap">
+                            <img src="images\mondulkiri\foods\700-kralan-mondulkiri.jpg" alt="Kralan Mondulkiri" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Kralan Mondulkiri</h3>
+                            <p class="card-desc">Kralan is a traditional Cambodian snack popular in Mondulkiri, made from sticky rice, black beans, coconut milk, and palm sugar, roasted inside bamboo. This cooking method gives it a smoky aroma and a lightly sweet, rich flavor. Often enjoyed during festivals or as a morning snack, Kralan is commonly sold along village roads. It’s a simple yet meaningful dish that reflects local culture and tradition</p>
+                        </div>
+                    </div>
+            
+                    <div class="food-card reveal">
+                        <div class="card-img-wrap">
+                            <img src="images\mondulkiri\foods\700-salomr-korko-mondulkiri.jpg" alt="Samlor Korko" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Samlor Korko</h3>
+                            <p class="card-desc">Samlor Korko is a traditional Cambodian soup popular in Mondulkiri, known for its rich and comforting flavor. It is made with a mix of vegetables, herbs, and a flavorful broth, sometimes with fish, chicken, or pork. Often enjoyed during the rainy season, this nourishing dish reflects the balance of local ingredients and Khmer cooking traditions. It’s a must-try for anyone wanting an authentic taste of Mondulkiri cuisine.</p>
+                        </div>
+                    </div>
+            
+                    <div class="food-card reveal">
+                        <div class="card-img-wrap">
+                            <img src="images\mondulkiri\foods\SomlorProng.jpg" alt="Samlor Prong" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Samlor Prong</h3>
+                            <p class="card-desc">Samlor Prong is a unique Bunong dish in Mondulkiri, cooked inside bamboo over a fire. It combines fish, eggplant, herbs, and spices, creating a rich, smoky flavor. More than just food, it reflects the local way of life and connection to nature. This traditional soup is a must-try for an authentic Mondulkiri experience.</p>
+                        </div>
+                    </div>
+            
+                    <div class="food-card reveal">
+                        <div class="card-img-wrap">
+                            <img src="images\mondulkiri\foods\Chaorkrong.jpg" alt="Chaa Angrong Sach Ko" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Chaa Angrong Sach Ko</h3>
+                            <p class="card-desc">Chaa Angrong Sach Ko is a unique Mondulkiri dish made with stir-fried beef, herbs, and red tree ants, giving it a tangy and aromatic flavor. The ants add a natural sourness that blends well with spices like lemongrass, garlic, and chili. Though unusual, it’s a traditional local specialty and a great way to experience authentic Mondulkiri cuisine.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Section 3: ACCOMMODATION-->
+
+        <div class="section-wrap alt-bg" id="accommodation">
+            <section>
+                <div class="section-header reveal">
+                    <p class="section-tag">Stay</p>
+                    <h2 class="section-title">Accommodation</h2>
+                    <div class="section-divider"></div>
+                </div>
+            
+                <div class="tabs reveal">
+                    <button class="tab-btn active" onclick="showTab('hotels')">Hotels</button>
+                    <button class="tab-btn" onclick="showTab('guesthouses')">Guest Houses</button>
+                </div>
+            
+                <!-- Hotels -->
+                <div class="tab-panel cards-grid active" id="tab-hotels">
+            
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="images\mondulkiri\Accommodation\KnnResort.jpg" alt="Knn Resort" loading="lazy">
+                            <span class="card-badge">5 Star</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Knn Resort</h3>
+                            <p class="card-desc">KNN Resort Mondulkiri is a 5-star resort in Sen Monorom, offering elegant accommodations with a saltwater pool, lush gardens, and modern facilities. Guests can enjoy free WiFi, 24-hour service, and a relaxing atmosphere. The resort features a restaurant serving a variety of international and Cambodian cuisines, along with leisure facilities like a pool bar and indoor play area. Located about 34 km from Bousra Waterfall, it is a convenient and comfortable base for exploring Mondulkiri.</p>
+                            <div class="card-location">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                                </svg>
+                            <a href="https://maps.app.goo.gl/UMqEowgeiViY38jj8" target="_blank">KNN Resort Mondulkiri</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="images\mondulkiri\Accommodation\HappyElephant.jpg" alt="Happy Elephant Bungalows" loading="lazy">
+                            <span class="card-badge">Family Friendly</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Happy Elephant Bungalows</h3>
+                            <p class="card-desc">Happy Elephant Bungalows in Sen Monorom offers comfortable stays with private rooms, balconies, and garden views. Guests can enjoy free WiFi, a restaurant, bar, and relaxing outdoor spaces. The lodge serves a variety of breakfast options and is conveniently located near attractions like Bousra Waterfall and Elephant Valley, making it a great base for exploring Mondulkiri.</p>
+                            <div class="card-location">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                                </svg>
+                                <a href="https://maps.app.goo.gl/hrRiXDviZHz4Rcq47" target="_blank">Happy Elephant Bungalows</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="images\mondulkiri\Accommodation\PidaCoffee.jpg" alt="Pida Coffee Farm" loading="lazy">
+                            <span class="card-badge">3 Star</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Pida Coffee Farm</h3>
+                            <p class="card-desc">PIDA Coffee Farm Lodge in Mondulkiri offers a relaxing stay surrounded by nature, featuring a saltwater pool, lush gardens, and scenic mountain views. Rooms are comfortable with modern amenities, balconies, and free WiFi. The on-site restaurant serves a variety of local and international dishes, with multiple breakfast options. Located about 36 km from Bousra Waterfall, it’s a peaceful and scenic place to stay while exploring Mondulkiri.</p>
+                            <div class="card-location">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                                </svg>
+                                <a href="https://maps.app.goo.gl/MzC99GfA313TmX8t8" target="_blank">Pida Coffee Farm</a>
+                            </div>
+                        </div>
+                    </div>            
+                </div>
+            
+                <!-- Guest Houses -->
+                <div class="tab-panel cards-grid" id="tab-guesthouses">
+            
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="images\mondulkiri\Accommodation\AvocadoGuesthouse.jpg" alt="Avocado Guesthouse" loading="lazy">
+                            <span class="card-badge">Khmer Style</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Avocado Guesthouse</h3>
+                            <p class="card-desc">Avocado Guesthouse in Sen Monorom offers comfortable, air-conditioned rooms with modern amenities and free WiFi. Guests can relax on the terrace and enjoy mountain views. The on-site restaurant serves European cuisine with various dietary options. Located about 33 km from Bousra Waterfall, it’s a convenient and cozy place to stay in Mondulkiri.</p>
+                            <div class="card-location">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                                </svg>
+                                <a href="https://maps.app.goo.gl/P1mdJ4Z2H2VvHqiW7" target="_blank">Avocado Guesthouse</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="images\mondulkiri\Accommodation\manelGuesthouse.jpg" alt="Manel Guesthouse" loading="lazy">
+                            <span class="card-badge">Khmer Style</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Manel Guesthouse</h3>
+                            <p class="card-desc">Manel Guesthouse and Restaurant in Sen Monorom offers comfortable rooms with air-conditioning, private bathrooms, and free WiFi. Guests can enjoy a terrace, 24-hour service, and a relaxing stay. The on-site restaurant serves Asian and vegetarian meals, with options for special diets. Located about 31 km from Bousra Waterfall, it’s a convenient and welcoming place to stay in Mondulkiri.</p>
+                            <div class="card-location">
+                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                <path d="M6 0C3.24 0 1 2.24 1 5c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5zm0 6.5A1.5 1.5 0 1 1 6 3.5a1.5 1.5 0 0 1 0 3z" fill="#C8860A"/>
+                                </svg>
+                                <a href="https://maps.app.goo.gl/tBne8M4WNn5V99b16" target="_blank">Manel Guesthouse</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </div>
+    </main>
+
+    <!-- FOOTER -->
     <footer id="contact">
-        <h2 class="collective-head">Contact</h2>
-    </footer>
+        <h2>Contact Us</h2>
+        <div class="footer-divider"></div>
+            <div class="footer-grid">
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home Page</a></li>
+                        <li><a href="mondulkiri.html">Mondulkiri</a></li>
+                        <li><a href="kompot.html">Kampot</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Contact Info</h3>
+                    <p>Group: ក្តិបITកំសត់ </p>
+                    <p style="margin-top:8px;">
+                        Email: <a href="123456@gamil.com">123456@gamil.com</a>
+                    </p>
+                    <p style="margin-top:8px;">
+                        Tel: <a href="+12 345-678-910">+12 345-678-910</a>
+                    </p>
+                    <p style="margin-top:8px;">
+                        Web: <a href="https://cloudrak.work/" target="_blank">Cambodia Traveling Guide Website</a>
+                    </p>
+                </div>
+
+                <!-- About -->
+                <div class="footer-col">
+                    <h3 class="footer-col-title">About</h3>
+                    <p>A tourism guide for Siem Reap Province, showcasing the rich culture, heritage, food, and accommodation options of Cambodia.</p>
+                </div>
+
+            </div>
+
+            <div class="footer-divider"></div>
+            <p class="footer-copy">© 2026 Siem Reap Province Tourism Guide</p>
+        </footer>
 
     <script src="script.js"></script>
 </body>
