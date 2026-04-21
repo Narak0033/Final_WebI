@@ -26,6 +26,77 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+/* ─── WELCOME SECTION ─────────────────────── */
+.welcome-wrap {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.welcome-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.welcome-text em {
+    color: var(--color-primary);
+    font-style: italic;
+}
+
+.welcome-desc {
+    font-size: 0.98rem;
+    color: var(--color-muted);
+    line-height: 1.8;
+    max-width: 480px;
+}
+
+.welcome-btn {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 12px 28px;
+    background-color: var(--color-primary);
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.welcome-btn:hover {
+    background-color: var(--color-secondary);
+    transform: translateY(-2px);
+}
+
+.welcome-img-wrap {
+    flex: 1.2;
+    position: relative;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.welcome-img-wrap img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    display: block;
+    border-radius: var(--radius);
+}
+
+/* Fade left edge into cream background */
+.welcome-img-wrap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 100%;
+    background: linear-gradient(to right, var(--color-bg), transparent);
+    z-index: 1;
+    pointer-events: none;
+}
+
+
 /* For Sr  */
  /* ─── NAV ─────────────────────────────────── */
 header  nav {
@@ -724,6 +795,22 @@ main    section {
             }
             .footer-col p{
                 text-align: center;
+            }
+        }
+
+        /* Responsive for welcome homepage*/
+        @media (max-width: 768px) {
+            .welcome-wrap {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .welcome-img-wrap img {
+                height: 280px;
+            }
+
+            .welcome-img-wrap::before {
+                display: none;
             }
         }
 
