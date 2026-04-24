@@ -458,7 +458,17 @@ main    section {
             flex: 1;
             text-align: justify;
         }
+
+        .card-desc ul {
+            margin-top: 6px;
+            padding-left: 20px;
+            list-style: disc;
+        }
  
+        .card-desc ul li {
+            margin-bottom: 4px;
+        }
+
         .card-location {
             display: flex;
             align-items: center;
