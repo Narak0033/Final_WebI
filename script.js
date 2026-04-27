@@ -1,5 +1,3 @@
-/* For Sr */
-
 // Hamburger menu
 function toggleNav() {
     document.getElementById('navList').classList.toggle('open');
@@ -12,12 +10,12 @@ document.querySelectorAll('.nav-list li a').forEach(link => {
     });
 });
 
-// Tab switching
-function showTab(name) {
+// Tab switching — 'e' is passed in so 'event' is not needed as a global
+function showTab(name, e) {
     document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
     document.getElementById('tab-' + name).classList.add('active');
-    event.currentTarget.classList.add('active');
+    e.currentTarget.classList.add('active');
 }
 
 // Scroll reveal
@@ -31,16 +29,20 @@ const obs = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.1 });
 reveals.forEach(el => obs.observe(el));
-    
-//Pop up image 
+
+// Pop up image — only runs on pages that have the popup (homepage)
 window.addEventListener("load", function () {
-  setTimeout(function () {
-    document.getElementById("adPopup").style.display = "flex";
-  }, 4000);
+    setTimeout(function () {
+        var popup = document.getElementById("adPopup");
+        if (!popup) return; // ← skip safely on province pages
+        popup.style.display = "flex";
+    }, 4000);
 });
 
 function closePopup() {
-  document.getElementById("adPopup").style.display = "none";
+    var popup = document.getElementById("adPopup");
+    if (!popup) return;
+    popup.style.display = "none";
 }
 
 // ===============================
@@ -56,13 +58,11 @@ var player;
 
 function onYouTubeIframeAPIReady() {
     var playerDiv = document.getElementById('player');
+    if (!playerDiv) return; // ← skip on homepage (no video player there)
 
-    if (!playerDiv) return;
-
-    // Get settings from HTML
-    var vidId = playerDiv.getAttribute('data-video-id');
-    var vidStart = parseInt(playerDiv.getAttribute('data-start')) || 0;
-    var vidEnd = parseInt(playerDiv.getAttribute('data-end')) || 0;
+    var vidId    = playerDiv.getAttribute('data-video-id');
+    var vidStart = parseInt(playerDiv.getAttribute('data-start'))  || 0;
+    var vidEnd   = parseInt(playerDiv.getAttribute('data-end'))    || 0;
     var vidSpeed = parseFloat(playerDiv.getAttribute('data-speed')) || 1;
 
     player = new YT.Player('player', {
@@ -87,16 +87,12 @@ function onYouTubeIframeAPIReady() {
     });
 }
 
-// Force loop back to the SPECIFIED start time
+// Force loop back to the specified start time
 function onPlayerStateChange(event) {
-    // 1. Check if the video has ended (YT.PlayerState.ENDED is 0)
     if (event.data === YT.PlayerState.ENDED) {
-        var playerDiv = document.getElementById('player');  
-        if (!playerDiv) return;      
-        // 2. Get the original start time from your HTML attribute
+        var playerDiv = document.getElementById('player');
+        if (!playerDiv) return;
         var vidStart = parseInt(playerDiv.getAttribute('data-start')) || 0;
-        
-         // Small delay prevents YouTube override
         setTimeout(() => {
             player.seekTo(vidStart, true);
             player.playVideo();
