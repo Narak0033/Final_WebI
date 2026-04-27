@@ -57,6 +57,8 @@ var player;
 function onYouTubeIframeAPIReady() {
     var playerDiv = document.getElementById('player');
 
+    if (!playerDiv) return;
+
     // Get settings from HTML
     var vidId = playerDiv.getAttribute('data-video-id');
     var vidStart = parseInt(playerDiv.getAttribute('data-start')) || 0;
@@ -89,7 +91,8 @@ function onYouTubeIframeAPIReady() {
 function onPlayerStateChange(event) {
     // 1. Check if the video has ended (YT.PlayerState.ENDED is 0)
     if (event.data === YT.PlayerState.ENDED) {
-        var playerDiv = document.getElementById('player');        
+        var playerDiv = document.getElementById('player');  
+        if (!playerDiv) return;      
         // 2. Get the original start time from your HTML attribute
         var vidStart = parseInt(playerDiv.getAttribute('data-start')) || 0;
         
